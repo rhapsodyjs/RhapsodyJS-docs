@@ -31,7 +31,7 @@ var ModelName = {
 
 ## Attributes
 
-A model attribute can be writen in two ways:
+A model attribute can be writen by two ways:
 
 ```js
     attributeWithoutOptions: attributeType,
@@ -58,11 +58,11 @@ As RhapsodyJS uses Mongoose currently, you can use any of the [Mongoose datatype
 
 A model attribute can have the following options:
 
-* `type` The type of the attribute. For available types, see the session above. (**required**)
+* `type` The type of the attribute. For available types, see below. (**required**)
 * `serverValidations` Array of method *names* (that must be in the serverMethods) that validates the attribute
 * `default` Default value of the attribute
 * `required` If the attribute is required
-* `restricted` If the attribute is omited when the model is sent with the RESTful API (see the RESTful API session above)
+* `restricted` If the attribute is omited when the model is sent with the RESTful API (see `RESTful API` below)
 
 ## Methods
 
@@ -70,7 +70,7 @@ A model attribute can have the following options:
 
 These methods will be both in the server-side models (returned from a database query) and the client-side models (e.g. Backbone models), so shouldn't contain specific server-side or client-side code.
 
-## Client and Server Methods
+### Client and Server Methods
 
 Each on them, as the name says, will be attached to theirs respective sides (client-side and server-side) models.
 
@@ -78,8 +78,8 @@ Each on them, as the name says, will be attached to theirs respective sides (cli
 
 A model can have the following options:
 
-* `allowRest` Allow the creation of a RESTful API for this model (see the RESTful API session above)
-* `middlewares` Middlewares names (see Middlewares in the Configuration session) that the request to the RESTful API will pass before have access to the data.
+* `allowRest` Allow the creation of a RESTful API for this model (see the RESTful API below)
+* `middlewares` Middlewares names (see the Middlewares session) tha the request to the RESTful API will pass before have access to the data.
 
 ## RESTful API
 
