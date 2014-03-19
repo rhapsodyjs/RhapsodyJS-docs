@@ -96,3 +96,7 @@ The RESTful API of each model can be accessed by the path: /data/ModelName, so y
 * **DELETE** `/data/ModelName/<id>` Delete the document with the given *id* from the *ModelName* collection
 
 All theses request will first pass by the model middlewares (if any).
+
+## Accessing a model
+
+When programming some view, you can require a model using the method: Rhapsody.requireModel(modelName), and then use it as a Mongoose model.
