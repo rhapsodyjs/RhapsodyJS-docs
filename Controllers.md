@@ -114,7 +114,8 @@ The dynamic views must have a `action` option. This options can be described by 
             //View computing here
         },
         middlewares: [middlewaresNames],
-        params: [paramsNames]
+        params: [paramsNames],
+        customRouters: [customRoutes]
     }
 
 ```
@@ -169,3 +170,13 @@ search: {
 ```
 
 So if the user can now access: `/genre/search/punk-rock/80` and all the bands with this style will be shown.
+
+##### Custom routes
+
+You can also specify custom routes for your views.
+
+Using our example above, if you want that the user just use `/genre-x-age/punk-rock/80` to look for punk rock bands of the 80's, you can add the following attribute to the view object:
+
+```js
+customRoutes: ['/genre-x-age']
+```
