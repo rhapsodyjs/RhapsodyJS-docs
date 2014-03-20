@@ -115,7 +115,7 @@ The dynamic views must have a `action` option. This options can be described by 
         },
         middlewares: [middlewaresNames],
         params: [paramsNames],
-        customRouters: [customRoutes]
+        customRoutes: [customRoutes]
     }
 
 ```
@@ -149,7 +149,7 @@ search: {
     action: function(req, res) {
         var Band = Rhapsody.requireModel('Band');
 
-        Band.find({style: req.body.genre, age: req.body.age}, function(err, bands) {
+        Band.find({style: req.params.genre, age: req.params.age}, function(err, bands) {
             if(err) {
                 Rhapsody.log.error(err);
                 res.send(404);
@@ -180,3 +180,5 @@ Using our example above, if you want that the user just use `/genre-x-age/punk-r
 ```js
 customRoutes: ['/genre-x-age']
 ```
+
+**Don't forget the '/' in the begining of the custom route's path, or the custom routes won't work!**
