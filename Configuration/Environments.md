@@ -11,7 +11,7 @@ var config = {
     port: 4242,
 
     database: {
-        active: true, //If the app uses dabatase
+        enabled: true, //If the app uses dabatase
         host: 'localhost',
         port: 27017,
         name: 'rhapsodyDB'
@@ -26,7 +26,7 @@ var config = {
     },
 
     socket: {
-        active: true //If the app uses Socket. To set the socket behavior, see Socket in the Configuration session
+        enabled: true //If the app uses Socket. To set the socket behavior, see Socket in the Configuration session
     }
 }
 ```

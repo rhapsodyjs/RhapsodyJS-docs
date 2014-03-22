@@ -58,7 +58,7 @@ As RhapsodyJS uses Mongoose currently, you can use any of the [Mongoose datatype
 
 A model attribute can have the following options:
 
-* `type` The type of the attribute. For available types, see below. (**required**)
+* `type` The type of the attribute. For available types, see above. (**required**)
 * `serverValidations` Array of method *names* (that must be in the serverMethods) that validates the attribute
 * `default` Default value of the attribute
 * `required` If the attribute is required
