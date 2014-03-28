@@ -54,6 +54,8 @@ var config = {
         allowREST: true
     },
 
+    enableCompression: true,
+
     generateClientModels: true
 }
 ```
