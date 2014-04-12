@@ -31,7 +31,8 @@ var config = {
         port: 27017,
         name: 'rhapsodyDB',
         username: undefined,
-        password: undefined
+        password: undefined,
+        mongoOptions: {}
     },
 
     log: {
@@ -63,6 +64,11 @@ var config = {
 
         //If must be created REST routes for models
         allowREST: true
+    },
+
+    //If true, uploaded files via form will be at req.file
+    upload: {
+        enabled: true,
     },
 
     compression: {

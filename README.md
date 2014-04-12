@@ -6,6 +6,8 @@ RhapsodyJS is a HMVC framework that runs on top of Express 4.
 
 Surf the documentation files to understand any of the features, and see the [example project](https://github.com/rhapsodyjs/RhapsodyJS/tree/master/test/testProject/app) on the RhapsodyJS repository to see some examples.
 
+It's the first documentation of RhapsodyJS, so it's still a little poor, but I hope it's helpful.
+
 ## Install RhapsodyJS
 
 To install RhapsodyJS, you must run the command:
