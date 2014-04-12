@@ -26,7 +26,7 @@ var config = {
     },
 
     database: {
-        enabled: true, //If the app uses dabatase
+        enabled: true,
         host: 'localhost',
         port: 27017,
         name: 'rhapsodyDB',
@@ -35,12 +35,23 @@ var config = {
     },
 
     log: {
-        level: 'debug', //For debug levels, see WolverineJS documentation: https://github.com/talyssonoc/wolverinejs
-        output: '/home/rhapsody/log.log', //if undefined, will print to the terminal
-        printStack: false, //If true, will print the error stack if an Error object is passed as argument in some log method
-        printLevel: true, //If true, show the debug level before the message
-        time: true, //If true, shows the time the log was logged before the level name
-        silent: false
+        //For debug levels, see WolverineJS documentation: https://github.com/talyssonoc/wolverinejs
+        level: 'debug',
+
+        //if undefined, will print to the terminal
+        output: '/home/rhapsody/log.log',
+
+        //If true, will print the error stack if an Error object is passed as argument in some log method
+        printStack: false,
+
+        //If true, show the debug level before the message
+        printLevel: true,
+
+        //If true, shows the time the log was logged before the level name
+        time: true,
+
+        //If true, show and file and the line number of where the log was called
+        printFileInfo: true
     },
 
     routes: {
@@ -54,7 +65,14 @@ var config = {
         allowREST: true
     },
 
-    enableCompression: true,
+    compression: {
+        enabled: true
+    },
+
+    //See CSFR session to see how it works
+    csrf: {
+        enabled: false
+    },
 
     generateClientModels: true
 }

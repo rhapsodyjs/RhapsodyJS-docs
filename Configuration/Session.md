@@ -6,12 +6,22 @@ This file can have the following options:
 
 ```js
 {
-    sessionIDKey: 'sessionID', //The id of the session on the browser of the client
-    cookieSecret: 'rhapsodyCookieSecret', //The secret to use signed cookies. If "undefined", the cookies will be unsigned
-    sessionSecret: 'rhapsodySessionSecret', //The secret used to protect the cookie key of the session in the browser of the client
-    maxAge: 60000, //The max age of the cookies. If "undefined", the cookies will never expire
-    sessionStore: new MongoStore({
-        url: 'mongodb://localhost:27017/rhapsodySession'
-    })
+    enabled: true,
+
+    //The id of the session on the browser of the client
+    sessionIDKey: 'sessionID',
+
+    //The secret to use signed cookies. If "undefined", the cookies will be unsigned
+    cookieSecret: 'rhapsodyCookieSecret', 
+
+    //The secret used to protect the cookie key of the session in the browser of the client
+    sessionSecret: 'rhapsodySessionSecret', 
+
+    //The max age of the cookies. If "undefined", the cookies will never expire
+    maxAge: 60000, 
+
+    //If undefined, uses MemoryStore
+    //otherwise you must pass a store capable of store cookies/sessions
+    sessionStore: undefined
 }
 ```

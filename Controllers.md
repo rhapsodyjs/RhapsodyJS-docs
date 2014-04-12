@@ -70,7 +70,7 @@ Using our example above, the mainView option of our `band` controller would be t
 ### Middlewares
 
 The middlewares defined here are applied to all the views of the controller (see the Middlewares session).
-Should be an array of the names of the middlewares.
+Should be an array of strings (so it will be the middleware with the same name in the `middlwares` folder) or functions (so the function itsel will be the middleware).
 
 ### Views
 
