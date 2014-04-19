@@ -1,5 +1,7 @@
 ![Logo](https://cloud.githubusercontent.com/assets/4325587/2675412/53a4b692-c118-11e3-8147-2f7d99355ae5.png)
 
+It's out of date, prefer to use the [RhapsodyJS website](http://rhapsodyjs.github.io/)
+
 # RhapsodyJS
 
 RhapsodyJS is a HMVC framework that runs on top of Express 4.
